@@ -14,7 +14,6 @@ class DoublyCircularLinkedList:
         # Write code here
         new = Node(data)     
         temp = self.head
-
         if(self.head == None):
             self.head = new
             return new.data
@@ -25,20 +24,20 @@ class DoublyCircularLinkedList:
             new.prev = temp
             return temp.next
 
-    def add_at_head(self, data) -> bool:
-        # Write code here
+#     def add_at_head(self, data) -> bool:
+#         # Write code here
 
-    def add_at_index(self, index, data) -> bool:
-        # Write code here
+#     def add_at_index(self, index, data) -> bool:
+#         # Write code here
 
-    def get(self, index) -> int:
-        # Write code here
+#     def get(self, index) -> int:
+#         # Write code here
 
-    def delete_at_index(self, index) -> bool:
-        # Write code here
+#     def delete_at_index(self, index) -> bool:
+#         # Write code here
 
-    def get_previous_next(self, index) -> list:
-        # Write code here
+#     def get_previous_next(self, index) -> list:
+#         # Write code here
 
 
 # Do not change the following code
