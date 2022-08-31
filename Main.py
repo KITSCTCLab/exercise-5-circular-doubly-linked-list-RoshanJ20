@@ -68,7 +68,6 @@ class DoublyCircularLinkedList:
         return curr_node.data
 
     def delete_at_index(self, index) -> bool:
-        curr_node = 0
         if index < 0 or index >= self.count:
             return False
         if index == 0:
@@ -85,7 +84,7 @@ class DoublyCircularLinkedList:
             self.end = temp.previous
             self.count -= 1
             return True
-            curr_node = self.head
+        curr_node = self.head
         for ind in range(index):
             curr_node = curr_node.next
         curr_node.previous.next = curr_node.next
